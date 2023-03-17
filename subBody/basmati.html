@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+ html{
+    height:100%;
+    width:100%;
+    background:linear-gradient(45deg ,rgb(80, 76, 76), black);
+    background-size: cover;
+    background-image: url("image/hbg.jpg");
+   
+} 
+body{
+    height: max-content;
+    width:auto;
+    margin-top:80px; 
+}
+.content01 #R{
+    width: 30%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.content01 #R img {
+    width: 100%;            
+    transition: 0.5s all ease-in-out;
+}
+ .content01 #R:hover img {
+    transform: scale(1.05);
+}
+.content01 #L{
+    width: 70%;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+.content01 #L:hover{
+    transform: scale(1.02);
+}
+.content02 #L{
+    width: 30%;
+    border-radius: 10%;
+    overflow:hidden;
+}
+.content02 #L img {
+    width: 100%;            
+    transition: 0.5s all ease-in-out;
+}
+.content02 #L:hover img{
+    transform: scale(1.05);
+}
+.content02 #R{
+    width: 70%;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+.content02 #R:hover{
+    transform: scale(1.02);
+}
+
+.ch h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px;
+    color: aliceblue;
+}
+.ch{
+    text-shadow: -2px 2px 5px black
+}
+#B01{
+    font-size: 25px;
+    padding: 0 20px 0 20px;
+    height: 262px;
+    width: auto;
+    margin-top:100px;
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow:0px 0px 150px;
+}
+#B01 div{
+    height: 100%;
+    width: 50%;
+}
+.basimg{
+    height: 457px;
+    width: 500px;
+    background-position: center;
+    background-image: url("image/BasmatiRice.jpg");
+    border-radius: 10%;
+    box-shadow: 0px 0px 19px 9px black;;
+}
+#headMe{
+    font-family: Arial, Helvetica, sans-serif;
+     background: linear-gradient(to right,black,#5b5bff,#f64c6a, white); /* */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: none;
+}
+#process{
+    background-color: rgba(0 0 0 / 85%);
+    box-shadow:0px 0px 150px;
+}
+#process p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0px 60px 0px 60px;
+}
+#process h1{
+    font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+#gif img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    size: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <div onclick="basmatiCost()" id="gif">
+        <img src="image/BasmatiCoin.gif">
+    </div>
+    <div class="ch">
+    <center><h1 id="headMe">Basmati Rice</h1></center><br>
+    <center><div class="basimg"></div></center>
+    <div class="content01" id="B01" style="margin-top:15%;">
+        <div id="L" style="float: right;" oncopy="return false" oncut="return false" onpaste="return false">
+            <center><p1 style="color:rgb(234 192 255);font-family: cursive;word-wrap: break-word;"><b><u>SOIL REQUIREMENT FOR BASMATI RISE</u></b></p1></center>
+            <ul style="color:rgb(255, 255, 255);font-size:120%;padding-top: 15px;padding-left: 40px;">
+                <li>Basmati rice can be grown in all type of soil.</li>
+                <li>heavy neutral soils like clay loam,clay and loamy.</li>
+                <li>pH range 5.0 to 8.5.</li>
+                <li>Alkalin or saline not suitable for its cultivation.</li>
+            </ul>
+        </div>
+        <div id="R" ><img src="image/BasmatiSoil.png" id="Img"></div>
+    </div><br>
+    <div class="content02" id="B01" >
+        <div id="L" style="float: right;"><img src="image/BasmatiWater.jpg" id="Img"></div>
+        <div id="R" oncopy="return false" oncut="return false" onpaste="return false">
+            <center><p1 style="color:rgb(234 192 255);font-family: cursive;"><b><u>IRRIGATION IN BASMATI RICE FARMING</u></b></p1></center>
+            <ul style="color:rgb(255, 255, 255);font-size:120%;padding-top: 20px;padding-left: 40px;">
+                <li>Basmati rice crop Requires 2 to 4cm of Water in Surface Irrigation.</li>
+                <li>Drip Irrigation and Sprinkler Irrigation is to reduse water usage.</li>
+                <li>Surface Irrigation Water supply 1hr/per acre.</li>
+            </ul>
+        </div>
+    </div><br>
+    <div class="content01" id="B01" >
+        <div id="L" style="float: right;" oncopy="return false" oncut="return false" onpaste="return false">
+            <center><p1 style="color:rgb(234 192 255);font-family: cursive;"><b><u>CLIMATE REQUIREMENT FOR BASMATI RICE</u></b></p1></center>
+            <ul style="color:rgb(255, 255, 255);font-size:120%;padding-top: 15px;padding-left: 40px;">
+                <li>Basmati rice crop requires evenly distributed rainfall throughout its growth .</li>
+                <li>ideal temperature for its cultivation is 16.4 to 32.1 ° C.</li>
+                <li>It also requires clear sky during day and low night temperatures.</li>
+            </ul>
+        </div>
+        <div id="R" style="float: right;"><img src="image/BasmathiClimate.jpg" height="100%"></div>
+    </div><br>
+    <div class="content02" id="B01" >
+        <div id="L" style="float: right;"><img src="image/BashmathiSeed.jpg"></div>
+        <div id="R" style="float: right;"oncopy="return false" oncut="return false" onpaste="return false">
+            <center><p1 style="color:rgb(234 192 255);font-family: cursive;"><b><u>SEED SELECTION FOR BASHMATHI RICE</u></b></p1></center>
+            <ul style="color:rgb(255, 255, 255);font-size:120%;padding-top: 20px;padding-left: 40px;">
+                <li>Selecting good quality and genetically good seeds are very important in basmati crop cultivation.</li>
+                <li>Farmers should buy the seeds from the trusted sources.</li>
+                <li>seed should dry on buying.</li>
+            </ul>
+        </div>
+    </div><br>
+    <div class="content01" id="B01" >
+        <div id="L" style="float: right;" oncopy="return false" oncut="return false" onpaste="return false">
+            <center><p1 style="color:rgb(234 192 255);font-family: cursive;"><b><u>PESTS & DISEASES</u></b></p1></center>
+            <ul style="color:rgb(255, 255, 255);font-size:120%;padding-top: 15px;padding-left: 40px;">
+                <li> Pests and diseases are main threats in basmati rice farming.</li>
+                <li>Neck blast disease, Sheath blight are the main diseases in basmati crop.</li>
+                <li>Sheath rot & false smut, yellow stem borer, gall midge and brown plant hopper are the main pest found.</li>
+                <li>These pests and diseases can be reduced substantially by applying effective bioagents like “Trichogramma japonicum”  & T. chilonis.</li>
+            </ul>
+        </div>
+        <div id="R" style="float: right;"><img src="image/BasmathiPests.jpg" height="100%"></div>
+    </div><br><br><br><br>
+    <div id="process">
+        <center><h1>FORMING PROCEDURE</h1></center><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Land Preparation and Transplanting in &nbsp;Basmati Rice Farming:-</strong>
+            </span><br>
+            "&nbsp;The main field should be dry ploughed 2 to 3 weeks before plantation. 
+            After ploughing, the field should be submerged with 5 cm – 10 cm standing water. 
+            Incorporate 10 to 12 tonnes of organic manure/compost or 10 to 25 tonnes of green manure. 
+            The field should be levelled properly after applying the organic matter. 
+            Normally land preparation for rice crop cultivation is 1 time ploughing & 1 time puddling. 
+            Make sure the field is flooded at least 3 to 4 days before transplanting the seedlings."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>INTRODUCTION:-</strong>
+            </span><br>
+            "&nbsp; Hello rice farmers, here is the complete guide of how to grow Basmati Rice from seed along with popular Basmati Varities. 
+            Basmati rice is famous for its excellent cooking and eating qualities. 
+            Around 20 percent area under rice cultivation is occupied by basmati rice. 
+            India is also earning a good amount of foreign exchange on exports of basmati rice. 
+            Higher yields can be achieved by adopting proper scientific methods in cultivation of basmati rice."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>PUSA BASMATI NO-1:-</strong>
+            </span><br>
+            "&nbspIt is about 100 cm tall and is photo insensitive. 
+            It prefers high fertile soils. 
+            Grains are superfine and elongate well while cooking. 
+            Contains mild aroma. 
+            After cooking rice is non-sticky and soft to eat. Maturity period is140 days. 
+            Yield is about 16 quintal per acre"
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>PUSA BASMATI 1121:-</strong>
+            </span><br>
+            "&nbsp;Height is 120 cm tall. 
+            Good cooking quality. 
+            It has longest cooked rice length among all aromatic rice varieties which were recommended for cultivation in Punjab. 
+            It is photo insensitive and matures in 137 days after seeding. 
+            Yield-13.7 quintals of basmati rice per acre."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>BASMATI 370:-</strong>
+            </span><br>
+            "&nbsp;It is about 165 cm tall, photo sensitive and lodge under high fertility conditions. 
+            It does well on average fertility soils. 
+            Grains are superfine, highly aromatic and elongate almost double during cooking. 
+            It matures after 150 days. 
+            Average yield is about 12 quintals per acre."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Super Basmati:-</strong>
+            </span><br>
+            "&nbsp;It is 113 cm tall and is weakly photo sensitive. 
+            It does best under medium fertility conditions. 
+            It matures after 145 days after seeding. 
+            Average yield is 14 quintal of per acre."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Punjab Basmati 2:-</strong>
+            </span><br>
+            "&nbsp;It is about 125 cm tall and is weakly photosensitive. 
+            Matures after 140 days after seeding. Its average yield is 12.6 quintals of per acre."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Punjab Mehak:-</strong>
+            </span><br>
+            "&nbsp;This is an aromatic rice variety. 
+            It is photo insensitive and is about 100 cm tall. 
+            It matures after 125 days after seeding. 
+            Possess resistance to most of the patho types of bacterial blight which are prevalent in Punjab. 
+            Its average yield is about 17 quintal per acre."
+        </p><br>
+        <h2 style="    background-color: #5dd2a2;
+        padding-left: 25px;
+        color: black;
+        border-radius: 15px;
+        margin: 0px 20px;">Now, let us get into complete requirements for how to grow Basmati Rice from seed in open field cultivation.</h2><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Climatic conditions required for growing Basmati Rice from seed:-</strong>
+            </span><br>
+            "&nbsp;Sufficient water facilities are essential for basmati rice cultivation. 
+            Climatic regions with high humidity and prolonged sunshine are suitable for basmati rice cultivation. 
+            When crop matures in cooler climatic conditions quality of the produce will be superior. 
+            Where high temperature during grain filling reduces the quality."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Soils suitable for growing Basmati Rice from seed:-</strong>
+            </span><br>
+            "&nbsp;Soils with good drainage facilities should be preferred. 
+            Required soil pH is 5.0-8.0. 
+            Avoid soils with poor drainage and saline in nature."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Crop rotations in Basmati rice farming:-</strong>
+            </span><br>
+            "&nbsp;It can be grown in crop rotations in crops like wheat, bajra, sunflower, celery, berseem and maize etc."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Time of Nursery Sowing:-</strong>
+            </span><br>
+            "&nbsp;For late maturing types nursery should be sown during second fort night of June and for early maturing types nursery was sown during first fort night of June."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Unpuddled direct seeded Basmati rice:-</strong>
+            </span><br>
+            <p>We can grow basmati rice by direct sowing by practicing the following points.</p>
+                <ul style="color:white;padding-left: 140px;font-size: 20px;">
+                <li>Sowing of basmati rice by direct seeding only in medium to heavy textured soils.</li>
+                <li>Proper control of weeds is important for raising a healthy crop of direct seeded basmati rice.</li>
+                <li>Ensure its proper establishment by sowing seeds with tractor drawn rice drill<strong>.</strong><strong> </strong></li>
+                </ul>
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>The seed rate for growing Basmati Rice from seed:-</strong>
+            </span><br>
+            "&nbsp;8 to 10 kg seed per acre with the row to row spacing of 20cm."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Transplanting time in Basmati Rice farming:-</strong>
+            </span><br>
+            "&nbsp;Time of transplanting is an important factor in determining the yield and quality of the Basmati rice. 
+            Basmati 386 and Basmati 370 if transplanted too early have a prolonged vegetative phase resulting into a leafy and tall crop. 
+            Such crop is highly prone to lodging because of excessive vegetative growth and height. 
+            To prevent lodging, lopping of the upper half of crop canopy after 45 days of transplanting may be done. 
+            Further it also reduce stem borer damage. 
+            Being photoperiod sensitive these will flower when a specific day length was met. 
+            The early transplanted crop also experiences high temperature at flowering which in result lowers the cooking quality. 
+            Proper time of transplanting for Basmati 386 and Basmati 370 is second fortnight of July. 
+            Punjab Mehak 1, Punjab Basmati 2, Pusa Basmati 1121, Super Basmati and Pusa Basmati No. 1 etc. 
+            may be transplanted during first fortnight of July. 
+            The seedlings of 25-35 days old with 5-6 leaves stage are suitable for transplanting in to main field. 
+            Transplanting old seedling cause reduced tillering and yield in basmati rice cultivation."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>The method of Transplanting in Basmati Rice farming:-</strong>
+            </span><br>
+            "&nbsp;The nursery should be irrigated before uprooting the seedlings. 
+            Seedlings should be transplanted carefully after washing to remove the mud with a spacing of 20 x 15 cm (33 hills/sq. metre) in well puddled field."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Fertilizer Application or Fertilizer management in Basmati Rice farming:-</strong>
+            </span><br>
+            "&nbsp;High doses of nitrogen cause the crop to prone lodging by causing excessive vegetative growth which results in a reduction in yield. Application of 75 kg of superphosphate per acre prior to last puddling is recommended.  Broadcasting of 18 kg urea per acre in two splits is recommended. The first dose needs to be applied after three weeks and the second, six weeks after transplanting. Nitrogenous fertilizer should be applied when water is not standing in the field if possible. Organic manures have to be added before last ploughing to the soil."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Basmati plant protection measures:-</strong>
+            </span><br>
+            "&nbsp;INSECSTS & PESTS<br><br>
+            Rice stemborers : <br>The larvae of these insects bore into the stem and cause damage from
+            July to October. The affected young plants show dead-hearts (yellowing and drying of central shoot)
+            whereas the old ones produce empty earheads which turn white and stand erect. The fields showing more
+            than 5% dead hearts (economic threshold level) should be sprayed with 350 ml of Hostathion 40 EC
+            (triazophos) or 560 ml of Monocil 36 SL (monocrotophos) or 1 litre of
+            Coroban/Dursban/Lethal/Chlorguard/Durmet/Classic/Force 20 EC (chlorpyriphos) in 100 litres of water
+            per acre. Further application of any of these insecticides may be repeated as and when damage reaches
+            economic threshold level.<br><br>
+            Leaf folder :<br> The larvae fold the leaves, eat out the green tissue and produce white
+            streaks. The damage is highest during August-October. Spray the crop when the leaf damage
+            reaches 10 per cent (ETL) with 350 ml of Hostathion 40 EC (triazophos) or one litre of Coroban/
+            Durmet/ Force 20 EC (chlorpyriphos) or 560 ml of Monocil 36 SL (monocrotophos) in 100 litres of water
+            per acre.<br><br>
+            Plant hoppers :<br> These hoppers include, whitebacked plant hopper and brown planthopper.
+            Both nymphs and adults of these pests suck the cell sap particularly from the leaf-sheath from July to
+            October. The crop dries up in patches. As the plants dry up, the hoppers migrate to the adjoining plants
+            and kill them. In a few days, the area of the dry patches enlarge. To minimise the damage by whitebacked
+            planthopper, grow PAU 201 which is moderatelsssy resistant to this insect. About one month after
+            transplanting, a few plants in the field should be slightly tilted and tapped 2 or 3 times at the base at
+            weekly interval. If minimum 5 plant hoppers per hill are<br>
+            seen floating in the water, only then the crop should be treated with insecticide. The plant hoppers can be
+            controlled by spraying 40 ml Confidor 200 SL (imidacloprid) or 800 ml Ekalux/Quinguard 25 EC
+            (quinalphos) or one litre Coroban/Dursban 20 EC (chlorpyriphos) or 560 ml Thiodan/ Endocel 35 EC
+            (endosulfan) in 100 litres of water per acre. Repeat the spray if necessary.
+            For better effectiveness, direct the spray towards the base of the plants. If the damage is noticed at
+            hopper burn stage, treat the affected spots along with their 3-4 metre periphery immediately as these spots
+            harbour high population of the insect.<br><br>
+            Grasshoppers : <br>The adults and nymphs of the grasshoppers eat the leaves especially in nursery.
+            Insecticides recommended for the control of plant hoppers are also effective for
+            grasshoppers.<br><br>
+            Rice hispa :<br> Rice hispa is a serious pest in some areas of the Gurdaspur and Amritsar
+            districts and is also found in the other rice growing areas of the State. The grubs of this pest tunnel into
+            the leaves, whereas the adults are exposed feeders. The grubs cause damage by producing bold, white
+            streaks on the leaves. If the attack starts in the nursery, clip-off and destroy the leaf tips of the affected
+            seedlings before transplanting. On the transplanted crop, spray 120 ml Methyl Parathion 50 EC
+            (methylparathion)/560 ml Monocil 36 SL (monocrotophos)/800 ml Ekalux 25 EC (quinalphos)/one litre
+            Dursban 20 EC (chlorpyriphos) in 100 litres of water per acre with a manually operated sprayer. Repeat
+            the spraying if the attack persists.<br><br>
+            Rice root weevil : <br>This weevil is a localized pest in the rice area around Rajpura. However,
+            this pest has also been observed in some other areas in the State. Its white, legless grubs feed
+            on roots in the soil from July to September. The attacked plants turn yellow, stunted and produce only a
+            few tillers. Apply any of the following granular insecticides in the standing water :- 3 kg of
+            Thimet/Foratox 10G (phorate) per acre.<br><br>
+            Warning :<br> Use gloves while applying granular insecticides.<br><br>
+            Rice-ear-cutting-caterpillar : <br>The larvae of this insect are gregarious in habit and are
+            commonly known as „armyworm‟. The young larvae feed on leaves, leaving only the mid-ribs and items.
+            The old larvae cut off the panicles mostly at the base and hence the name “rice ear-cutting caterpillar”.
+            This stage of the insect causes serious loss to the paddy crop. The larvae are shy of sunlight and generally
+            feed at night. The damage to paddy crop is caused mostly during September to November. The insect can
+            be controlled by spraying the crop with 400 ml of Ekalux/Quinguard 25 EC (quinalphos) in 100 litres of
+            water per acre. As the pest is nocturnal in behaviour, the spray should be done in evening hours for
+            getting better results.<br><br>
+            DISEASES :<br><br>
+            Bacterial leaf blight (Xanthomonas oryzae pv. oryzae) :<br> Greenish-yellow stripes appear
+            along the leaf margins and extend both lengthwise and breadthwise. The leaf starts drying from
+            the tip, becomes white in severe cases and dries up completely. The disease sometimes
+            attacks the freshly transplanted seedlings which start wilting and in a few days the whole clump
+            dries up. The bacterium perpetuates through seed, rice straw, and roots of non-host plants
+            during the off-season. <br><br>In order to mitigate the losses, adopt the following measures :<br>
+            (i) For the management of bacterial leaf blight, grow rice varieties PR 120, PR 115, PR 113
+            and PR 111 which are resistant to most of the pathotypes of bacterial leaf blight pathogen
+            or PR-118, PR-116 and PR-114 which are resistant to some of the pathotypes of the bacterial
+            leaf blight pathogen.<br>
+            (ii) Do not apply excessive dose of nitrogen. Nitrogen should not be applied beyond six weeks
+            after transplanting (except when LCC is used).<br>
+            (iii) Do not pond water in the field.<br>
+            (iv) Treat seed before sowing to kill primary inoculum, see “Seed Treatment” under Agronomic
+            Practices.<br>
+            (v) (a) Do not grow nursery under shade.<br>
+            (b) Rice crop itself should not be grown in the shady area.<br>
+            (vi) The growing of rice in the area near Bhusa stack (Kup) should be avoided.<br><br>
+            Bacterial leaf streak (Xanthomonas oryzae pv. oryzicola) :<br> Small translucent streaks appear
+            in the interveinal areas of the leaf. The streaks gradually enlarge and turn reddish, when the
+            plants near maturity. For control measures, see “Seed treatment” under Agronomic Practices.
+            Blast (Pyricularia grisea) : The fungus causes spindle shaped spots with greyish centre and
+            brown margin on the leaves at maximum tillering. It also causes brown lesions on the neck of
+            the panicle, showing neck rot symptoms and the panicles fall over. The disease is more severe
+            on Basmati particularly in the submontaneous areas and under application of heavy nitrogenous
+            fertilizers. Spray the affected crop with Indofil Z-78, 75 WP (zineb) @ 500 g per acre in 200 litres
+            of water, at the maximum tillering and ear-emergence stages. Alternatively, spray Hinosan
+            (ediphenfos) 200 ml in 200 litres of water per acre.<br><br>
+            Brown leaf spot (Drechslera oryzae) :<br>It produces oval, eye-shaped spots with a conspicuous
+            dark-brown dot in the centre and light brown margin. The spot is surrounded by yellow halo.
+            Spots are also produced on the grains. This disease occurs in poor soils, therefore, give
+            adequate and balanced nutrition to the crop. To control the disease, give two sprays of Tilt 25
+            EC (propiconazole) @ 200ml or Indofil Z-78 (zineb) @500g in 200 litres of water/acre. The first
+            spray should be given at boot stage and second after 15 days.<br><br>
+            Sheath blight (Corticium sasakii) :<br> Greyish green lesions with purple margin develop on the
+            leaf-sheath above the water level. Later, the lesions enlarge and coalesce with other lesions.
+            The symptoms are usually not distinct till flowering. Its severe attack results in the poor filling of
+            the grains. Burn the rice straw and stubbles after harvesting the affected crop. Avoid the
+            excessive use of nitrogenous fertilizers. Keep the bunds clean by removing the grass.
+            To control sheath blight, spray the crop as soon as the disease is noticed at boot stage with
+            Tilt 25 EC @ 200ml or Monceren 250 SC (pencycuron) @ 200 ml or Bavistin 50 WP
+            (carbendazim) @ 200g in 200 litres of water per acre by directing the spray towards the base of
+            the plant. Give one more spray after 15 days.<br><br>
+            Sheath rot (Sarocladium oryzae) : <br>The rot occurs on the uppermost leaf-sheaths where
+            oblong to irregular and grey-brown to light-brown lesions develop. The lesions often coalesce to
+            cover the entire sheath. In severe cases, young panicles either do not emerge or emerge
+            partially. A white-powdery growth of the fungus appears on the panicle inside the sheath. The
+            glumes of infected florets are discoloured, dark-red or purple brown to black and often do not fill.
+            The fungus over-winters in rice straw and grains. Burn the rice straw after harvesting the
+            infected crop. Use disease free seed for sowing. Give two sprays of Tilt 25 EC @ 200 ml or
+            Bavistin 50 WP @ 200 gm in 200 litres of water per acre. The first spray should be given at boot
+            stage and second after 15 days interval.<br><br>
+            Stem rot (Sclerotium oryzae) : <br>The fungus affects the stem at earing and black lesions are
+            produced on the sheath at water level. Later on, the stem gets infected and rots leading to
+            withering and lodging of the plant. The incidence of this disease has declined on high yielding
+            varieties due to improved cultural practices. Prefer to grow tolerant varieties of the Basmati
+            group in the infested fields.<br><br>
+            False smut (Ustilaginoidea virens) : <br>Its incidence is increasing on high-yielding rice varieties.
+            The fungus transforms the individual grains into large greenish velvety spore-balls. High relative
+            humidity, rainy and cloudy days during the flowering period increase the incidence of the
+            disease.<br>
+            The application of organic manures and high dose of nitrogenous fertilizers also increase the
+            intensity of attack.<br>
+            To control this disease, give first spray of Blitox 50 WP (copper oxychloride) @ 500 g in 200
+            litres of water per acre at boot stage of the crop in disease prone areas followed by second
+            spray with Tilt 25 EC @ 200 ml in 200 liters of water after 10 days intergal.
+            Bunt (also called Kernel Smut) (Neovossia horrida) : Only a few grains in the panicle are
+            infected. Frequently, only a part of the grain is replaced by a black powder. Sometimes, entire
+            grain is also attacked and the black powder scatters on to other grains or leaves, and this is
+            often the easiest way to detect the disease in the field. The disease incidence is more on short
+            duration varieties, planted early.<br>
+            Also avoid heavy doses of nitrogenous fertilizers. Two sprays of Tilt 25 EC @ 200 ml in 200
+            litres of water/ acre at 10% flowering stage and 10 days after should be given for controlling the
+            disease."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>Harvesting and threshing of Basamti Paddy:-</strong>
+            </span><br>
+            "&nbsp;The crop should be harvested as soon as they mature <em>i.e. 
+            </em>when the ears are nearly ripe and the straw has turned up into yellow color. 
+            Delaying in harvesting may cause over-ripening and grains shattering. 
+            The harvested crop preferably should be threshed on the same day or next day of harvesting. 
+            Delayed threshing will cause high shattering losses, 
+            reduced head rice recovery and ultimately reduces the market price of the crop. 
+            Mostly harvesting should be done 30 to 40 days after flowering. 
+            Manual or mechanical harvesting is practiced."
+        </p><br><br>
+        <p>
+            <span style="color: burlywood;">
+                <strong>The yield of Basmati Rice:-</strong>
+            </span><br>
+            "&nbsp;Farmers can get a yield of 22-25 quintals per acre if everything was done in a meticulous way by 
+            adopting proper package of practices. However, for higher yields in Basmati rice farming, 
+            the farmer has to go for proper care and management in basmati rice cultivation and also can prefer."
+        </p><br><br>
+    </div>
+    </div>
+   
+</body>
+</html>
